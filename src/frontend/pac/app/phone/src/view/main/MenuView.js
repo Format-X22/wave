@@ -19,11 +19,11 @@ Ext.define('PAC.view.main.MenuView', {
                 handler: 'onMenuClick',
             },
             items: [
-                { xtype: 'container', html: '&nbsp;', height: 20 },
+                { xtype: 'container', html: '&nbsp;', height: 50 },
                 { text: 'Status', tag: 'statusView', height: 50 },
                 { text: 'Control', tag: 'controlView', height: 50 },
                 { text: 'Manual', tag: 'manualView', height: 50 },
-                { xtype: 'container', html: '&nbsp;', height: 20 },
+                { xtype: 'container', html: '&nbsp;', height: 50 },
             ],
         },
     ],

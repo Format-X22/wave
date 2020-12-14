@@ -28,6 +28,14 @@ Ext.define('PAC.view.main.MainView', {
                 title: 'Status',
                 ui: 'plain',
                 items: [
+                    {
+                        ui: 'plain',
+                        iconCls: 'x-fa fa-bars',
+                        margin: '0 0 0 0',
+                        handler: function() {
+                            Ext.Viewport.toggleMenu('bottom');
+                        },
+                    },
                     '->',
                     {
                         ui: 'plain',

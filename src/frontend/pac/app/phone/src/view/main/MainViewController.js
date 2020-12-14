@@ -2,8 +2,9 @@ Ext.define('PAC.view.main.MainViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.mainviewcontroller',
 
-    init: function(view) {
-        this.redirectTo('statusview', true);
+    init: function() {
+        this.initialMenuToggle = true;
+        this.redirectTo('statusView', true);
     },
 
     onMenuClick: function(button) {
@@ -31,6 +32,10 @@ Ext.define('PAC.view.main.MainViewController', {
         }
         centerview.setActiveItem(xtype);
 
-		Ext.Viewport.toggleMenu('bottom');
+        if (this.initialMenuToggle) {
+            this.initialMenuToggle = false;
+        } else {
+            Ext.Viewport.toggleMenu('bottom');
+        }
     },
 });
