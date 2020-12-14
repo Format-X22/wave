@@ -1,0 +1,22 @@
+{
+  "name": "wave",
+  "version": "0.0.1",
+  "description": "**WAVE** является системой автоматического и полуавтоматического управления торгами.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Format-X22/wave.git"
+  },
+  "author": "oPavlov aka Format-X22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Format-X22/wave/issues"
+  },
+  "homepage": "https://github.com/Format-X22/wave#readme",
+  "dependencies": {
+    "json-rpc-service": "^4.19.0"
+  }
+}
