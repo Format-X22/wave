@@ -16,7 +16,32 @@
     "url": "https://github.com/Format-X22/wave/issues"
   },
   "homepage": "https://github.com/Format-X22/wave#readme",
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4,
+    "semi": true,
+    "trailingComma": "es5",
+    "printWidth": 100,
+    "overrides": [
+      {
+        "files": [
+          "*.json",
+          "*.yml"
+        ],
+        "options": {
+          "tabWidth": 2
+        }
+      }
+    ]
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/*.js",
+      "!**/tests/_helpers.js"
+    ]
+  },
   "dependencies": {
+    "ccxt": "^1.39.33",
     "json-rpc-service": "^4.19.0"
   }
 }
