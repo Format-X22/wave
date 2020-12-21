@@ -3,6 +3,7 @@ Ext.define('PAC.view.main.MainViewController', {
     alias: 'controller.mainviewcontroller',
 
     init: function() {
+        this.initialCall = true;
         this.initialMenuToggle = true;
         this.redirectTo('statusView', true);
     },
@@ -18,6 +19,11 @@ Ext.define('PAC.view.main.MainViewController', {
     },
 
     mainRoute: function(xtype) {
+        if (this.initialCall) {
+            this.initialCall = false;
+            return;
+        }
+
         const exists = Ext.ClassManager.getByAlias('widget.' + xtype);
 
         if (exists === undefined) {

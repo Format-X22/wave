@@ -20,6 +20,10 @@ Ext.define('PAC.view.main.MainView', {
         },
         items: [
             {
+                xtype: 'authView',
+            },
+            {
+                hidden: true,
                 id: 'theToolbar',
                 xtype: 'toolbar',
                 cls: 'maintoolbar',

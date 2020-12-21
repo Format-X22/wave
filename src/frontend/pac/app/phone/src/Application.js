@@ -14,7 +14,9 @@ Ext.define('PAC.Application', {
 
     launch: function() {
         Ext.getBody().removeCls('launching');
-        var elem = document.getElementById('splash');
+
+        const elem = document.getElementById('splash');
+
         elem.parentNode.removeChild(elem);
 
         Ext.Viewport.add([{ xtype: 'mainview' }]);
